@@ -6,6 +6,7 @@ puts "----------"
 # Your code goes below here ...
 
 class Store < ActiveRecord::Base
+  has_many :employees
 end
 
 Store.create(name: "Burnaby", annual_revenue: "300000", mens_apparel: true, womens_apparel: true)
